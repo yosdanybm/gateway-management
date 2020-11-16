@@ -13,7 +13,7 @@
 ## Frontend (UI)
 
 <p align="center">
-  <a href="https://reactjs.org/" target="blank"><img src="./client/public/logo192.png" width="100" width="100" alt="React Logo" /></a>
+  <a href="https://reactjs.org/" target="blank"><img src="./client/public/logo192.png" alt="React Logo" /></a>
 </p>
  <p align="center">A JavaScript library for building user interfaces - <a href="https://reactjs.org/" target="blank">React.js</a>.</p>
 
