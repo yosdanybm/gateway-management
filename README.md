@@ -38,3 +38,18 @@ Executed each app(client, server) using the Readme.md files inside these.
 
 # /server/README.md
 ```
+
+## Test data for Postman
+
+In the following folder you are provided a collection of Postman to test the API:
+
+```bash
+# /collection-postman
+```
+
+## API documentation
+
+```bash
+# Redoc
+http://localhost:3000/api-docs/
+```

@@ -28,6 +28,13 @@ https://docs.mongodb.com/manual/installation/
 $ npm install
 ```
 
+## Configure the connection with your MongoDB database 
+
+```bash
+# app.module.ts
+'mongodb://user:password@localhost:27017/name_your_database'
+```
+
 ## Running the app
 
 ```bash

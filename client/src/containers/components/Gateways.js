@@ -151,7 +151,7 @@ const Gateways = () => {
         idGateway: state.currentIDGateway,
         uid: values.uid,
         vendor: values.vendor,
-        status: values.status ? 1 : 0,
+        status: values.status ? 'Online' : 'Offline',
       })
         .then((data) => {
           if (!data.data.error) {

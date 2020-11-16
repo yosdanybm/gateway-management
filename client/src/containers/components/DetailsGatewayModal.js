@@ -168,16 +168,14 @@ function DetailsGatewayModal(props) {
                           <TableCell>
                             <Chip
                               className={
-                                deviceRow.status === 0
+                                deviceRow.status === 'Offline'
                                   ? classes.offline
                                   : classes.online
                               }
                               size="small"
-                              label={
-                                deviceRow.status === 0 ? 'Offline' : 'Online'
-                              }
+                              label={deviceRow.status}
                               icon={
-                                deviceRow.status === 0 ? (
+                                deviceRow.status === 'Offline' ? (
                                   <WifiOffIcon />
                                 ) : (
                                   <WifiIcon />
