@@ -1,0 +1,364 @@
+{
+	"info": {
+		"_postman_id": "b327ffd0-ca58-4102-95e0-44dfa270ae3c",
+		"name": "Managing Gateways",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Gateway",
+			"item": [
+				{
+					"name": "api/gateway/findAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/gateway/findAll?limit=10&page=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"gateway",
+								"findAll"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "10"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/gateway/:id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/gateway/5fb1f21a39798949a0dadaa9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"gateway",
+								"5fb1f21a39798949a0dadaa9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/gateway/find",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"address\": \"192.168.2.7\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/gateway/find",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"gateway",
+								"find"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/gateway-create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"serial\": \"45345454\",\r\n    \"name\": \"Gateway A\",\r\n    \"address\": \"192.168.2.7\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/gateway",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"gateway"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/gateway/:id",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"serial\": \"45345454\",\r\n    \"name\": \"Gateway A Updated\",\r\n    \"address\": \"192.168.2.7\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/gateway/5fb1f21a39798949a0dadaa9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"gateway",
+								"5fb1f21a39798949a0dadaa9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/gateway/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/gateway/5fb1f21a39798949a0dadaa9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"gateway",
+								"5fb1f21a39798949a0dadaa9"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Device",
+			"item": [
+				{
+					"name": "api/device/findAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/device/findAll",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"device",
+								"findAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/device/:id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/device/5f96081337168121944933dc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"device",
+								"5f96081337168121944933dc"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/device/find",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"vendor\": \"Device A\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/device/find",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"device",
+								"find"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/device-create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idGateway\": \"5fb1f32a39798949a0dadaac\",\r\n    \"uid\": \"34534454\",\r\n    \"vendor\": \"Device A\",\r\n    \"status\": \"Online\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/device",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"device"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/device/:id",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"status\": \"Offline\",\r\n    \"uid\": 34534454,\r\n    \"vendor\": \"Device A Updated\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/device/5fb1f36839798949a0dadaae",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"device",
+								"5fb1f36839798949a0dadaae"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/device/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/device/5fb1f36839798949a0dadaae",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"device",
+								"5fb1f36839798949a0dadaae"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "621a9dad-914f-44a8-acc7-ab86a27663e4",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "a87d01be-4224-49ba-98b6-0c4cfe3e23b7",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
